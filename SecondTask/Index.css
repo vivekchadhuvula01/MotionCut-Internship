@@ -15,11 +15,14 @@ body {
   
 
 }
+
 form{
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: start;
+    width: 1/2vw;
+    height: 50vh;
     justify-content: center;
     /* position: static; */
     margin: 3rem;
@@ -28,9 +31,13 @@ form{
     input{
         border-radius: 4px;
         border: 1px solid black;
-        padding-left: 2rem;
-        padding: 6px;
-        padding-right: 2rem;
+        height: 2rem;
+        width: 1/2vw;
+        display: flex;
+        padding-right:20px ;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
         box-shadow: 1px 2px 1px black;
 
         
@@ -47,17 +54,19 @@ form{
     }
 
     input[type="submit"]{
-        padding: 0.5rem;
-        padding-right: 0.5rem;
+        padding: 10px;
         border-radius: 5px;
         border: 1px solid black;
         margin-top: 1rem;
+        font-weight: 500;
+        font-size: 1rem;
     }
 }
 h2{
     display: flex;
     align-items: center;
     justify-content: center;
+    
     margin-top: 5rem;
     font-size: 2.5rem;
 
