@@ -72,7 +72,8 @@
               Search
             </button>
           </form>
-          <a href="#cart" class="m-2"><img src="./cart.svg" alt="cart" /></a>
+          <a href="#cart" class="m-2 position-relative"><img src="./cart.svg" alt="cart" />
+          </a><p class="cart-id" id="clicks">0</p>
         </div>
       </div>
     </nav>
@@ -153,6 +154,11 @@
             </ul>
           </div>
           <button
+            onclick="function click() {
+              var click = 10;
+              click += 1;
+              document.getElementById('clicks').innerHTML= click
+            }"
             type="button"
             class="btn btn-primary"
             style="
@@ -160,6 +166,7 @@
               --bs-btn-padding-x: 3rem;
               --bs-btn-font-size: 1rem;
             "
+
           >
             Add to Cart
           </button>
@@ -219,6 +226,7 @@
         let displayImage = document.getElementById("displayImage");
         displayImage.src = imgsrc;
       }
+    
     </script>
   </body>
 </html>
