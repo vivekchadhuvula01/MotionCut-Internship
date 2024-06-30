@@ -5,14 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
-
+ <link rel="stylesheet" href="index.css">
   </head>
   <body>
+    
     <div class="h-screen w-screen bg-slate-200 flex items-center gap-6 flex-col flex-wrap">
       <h1 class="text-4xl ">TODO APP</h1>
       <div class=" flex gap-2 text-xl flex-wrap">
       <p>Today: </p>
       <p id="date" class="text-orange-900"></p>
+      </div>
+      <div class="flex gap-0.5  text-black ">
+      <input class="border-none sm:w-[300px] md:w-[600px] rounded-l-lg " id="task" type="text" value="" placeholder="Add Task">
+      <button  onclick="CreateElement()" class="bg-white text-slate-500 p-2 rounded-r-lg hover:bg-slate-100 active:border-2 flex items-center gap-2 border-sky-500">Add <img src="add-black.svg" class=""></button>
+      </div>
+      <div >
+        <ul id="list" class="  ">
+           
+        </ul>
       </div>
     </div>
 
