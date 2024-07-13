@@ -1,0 +1,68 @@
+.navbar{
+    background-color: beige;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-grow: inherit;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 4rem;
+    margin: 0;
+    padding: 0;
+
+
+    nav{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        img{
+            width: 6rem;
+            filter: grayscale(10%);
+        }
+        
+        button{
+            padding-bottom: 0.5rem;
+            padding-top: 0.5rem;
+            padding-left: 1rem;
+            padding-right: 1rem ;
+            border: none;
+            height: 2rem;
+            border-radius: 4px;
+            background-color: red;
+            font-size: medium;
+        }
+    }
+   
+   ul{
+    
+    display: flex;
+    gap: 20px;
+    font-size: large;
+    font-weight: 600;
+    align-items: center;
+    flex-grow: inherit;
+    flex-wrap: wrap;
+    list-style: none;
+    
+
+    li{
+        color: black;
+        list-style: none;
+        text-decoration: none;
+
+    }
+   } 
+}
+
+@media (max-widht:650px) {
+    nav{
+        display: flex;
+        flex-direction: column;
+
+
+        ul{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    
+}
